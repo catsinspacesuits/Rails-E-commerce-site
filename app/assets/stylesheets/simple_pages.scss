@@ -1,3 +1,89 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	bpx-sizing: border-box;
+}
+
+body {
+	font-family: "montserrat", arial;
+	font-weight: 700;
+}
+
+h1 {
+	font-family: "Crimson Text", Arial;
+	font-size: 3.4em;
+}
+
+.header {
+	width: 500px;
+	text-align: center;
+	padding: 0.5em;
+	margin: 0.5em auto;
+}
+
+.footer-text {
+	margin: 10px auto;
+	width: 200px;
+	padding-top: 0.7em;
+}
+
+footer {
+	width: 100%;
+	height: 4em;
+	background-color: rgba(217, 39, 39, 1);
+	border-top: 1px solid black;
+	margin-top: 2em;
+	clear: both;
+}
+
+.btn {
+	border: 2px solid rgba(217, 39, 39, 1);
+	background-color: #343434;
+	color: white;
+	font-weight: 900;
+}
+
+.btn:hover {
+	background-color: rgba(217, 39, 39, 1);
+	color: white;
+	border: 2px solid #343434;
+	transition: 300ms;
+}
+
+.index-main {
+	width: 70%;
+	height: 380px;
+	margin: 2em auto;
+}
+
+.book {
+	display: block;
+	float: left;
+	margin: 0.8em;
+	box-shadow: 5px 5px 10px #555555;
+}
+
+.contact-main {
+	width: 50%;
+	height: 360px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-main ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.about-main{
+	width: 70%;
+	height: auto;
+	padding: 10px 20px;
+	margin: 10px auto;	
+}
+
+.header-about {
+	text-align: center;
+	padding: 0.5em;
+	margin: 0 0 0.5em 0;
+}
