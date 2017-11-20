@@ -21,15 +21,8 @@ gem 'jquery-rails'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-<<<<<<< HEAD
-  # use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-=======
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
->>>>>>> e38f8ca59634703a58a4651522542c9c66c1d754
 end
 
 group :development do
