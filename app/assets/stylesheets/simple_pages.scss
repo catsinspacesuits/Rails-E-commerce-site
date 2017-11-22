@@ -1,6 +1,6 @@
 
 * {
-	bpx-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -14,7 +14,7 @@ h1 {
 }
 
 .header {
-	width: 500px;
+	max-width: 500px;
 	text-align: center;
 	padding: 0.5em;
 	margin: 0.5em auto;
@@ -50,16 +50,22 @@ footer {
 }
 
 .index-main {
-	width: 70%;
-	height: 380px;
-	margin: 2em auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-height: 380px;
 }
 
 .book {
-	display: block;
-	float: left;
-	margin: 0.8em;
+	width: 200px;
+	height: auto;
 	box-shadow: 5px 5px 10px #555555;
+	margin-bottom: 25px;
+}
+
+.book {
+	
 }
 
 .contact-main {
