@@ -3,11 +3,15 @@ body {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	color: white;
+
+
 }
 
 .wrapper {
 	width: 70%;
 	margin: 0 auto;
+
 }
 
 .grid-wrapper {
@@ -21,10 +25,11 @@ header {
 	position: relative;
 	width: 275px;
 	height: 390px;
-	border: 2px solid rgba(42, 55, 46, 1);
+	border: 1px solid black;
 	margin: 20px 50px 15px 0;
-	background-color: white;
-	box-shadow: 6px 8px 8px -1px rgba(105,41,41,0.73);
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	font-weight: 100;
 }
 
 .product:nth-child(3n) {
