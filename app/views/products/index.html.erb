@@ -10,9 +10,11 @@
         <div class="col-sm-2 col-md-4 product">
           <div class="product-name"><h1><%= product.name %></h1></div>
           <strong class="product-price">$ <%= product.price %></strong>
-          <div class="product-image"><%= image_tag(product.image_url, class: "img-responsive") %></div>
+          <strong class="product-colour"><%= product.colour %></strong>
+          <div>
+            <%= link_to image_tag(product.image_url, class: "product-image image-responsive"), product %>
+          </div>
           <p class="product-description"><%= product.description %></p>
-          
         </div><!-- /col -->
       <% end %>
     </div> <!-- end of row -->
