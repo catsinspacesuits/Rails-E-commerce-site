@@ -4,21 +4,11 @@ body {
 	padding: 0px;
 	box-sizing: border-box;
 	color: white;
-
-
 }
 
 .wrapper {
 	width: 70%;
 	margin: 0 auto;
-
-}
-
-.grid-wrapper {
-}
-
-header {
-	
 }
 
 .product {
@@ -68,5 +58,11 @@ header {
 
 .show-wrapper {
 	width: 70%;
+	margin: 0 auto;
+}
+
+// CAROUSEL
+
+.carousel-inner .item img {
 	margin: 0 auto;
 }
