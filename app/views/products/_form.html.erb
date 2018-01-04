@@ -1,3 +1,4 @@
+<div class="product-form">
 <%= form_with(model: product, local: true) do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
@@ -12,31 +13,35 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
+    <%= form.label :name %><br>
+    <%= text_field(:post, "", class: 'form-control') %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
+    <%= form.label :description %><br>
+    <%= text_area(:post, "", class: 'form-control', size: "7x7") %>
   </div>
 
   <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url, id: :product_image_url %>
+    <%= form.label :image_url %><br>
+    <%= text_field(:post, "", class: 'form-control') %>
   </div>
 
   <div class="field">
     <%= form.label :colour %><br>
-    <%= form.text_field :colour %>
+    <%= text_field(:post, "", class: 'form-control') %>
   </div>
 
   <div class="field">
     <%= form.label :price %><br>
-    <%= form.text_field :price %>
+    <%= text_field(:post, "", class: 'form-control', size: 15) %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= submit_tag("Create Product", class:"btn btn-default btn-product") %>
   </div>
+
+  <%= link_to 'Show', @product %> |
+  <%= link_to 'Back', products_path %>
 <% end %>
+</div>
