@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :products
+  post 'simple_pages/thank_you'
+  
   get 'simple_pages/about'
 
   get 'simple_pages/contact'
