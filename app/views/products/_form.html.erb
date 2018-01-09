@@ -1,5 +1,4 @@
-<div class="product-form">
-<%= form_with(model: product, local: true) do |form| %>
+<%= form_with(model: product, local: true, class: 'product-form') do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -13,36 +12,34 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %><br>
-    <%= text_field(:post, "", class: 'form-control') %>
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :product_name, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= form.label :description %><br>
-    <%= text_area(:post, "", class: 'form-control', size: "7x7") %>
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :product_description, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= form.label :image_url %><br>
-    <%= text_field(:post, "", class: 'form-control') %>
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url, id: :product_image_url, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :colour %><br>
-    <%= text_field(:post, "", class: 'form-control') %>
+    <%= form.text_field :colour %>
   </div>
 
   <div class="field">
     <%= form.label :price %><br>
-    <%= text_field(:post, "", class: 'form-control', size: 15) %>
+    <%= form.text_field :price %>
   </div>
 
   <div class="actions">
-    <%= submit_tag("Submit", class:"btn btn-default btn-product") %>
+      <%= submit_tag("Submit", class:"btn btn-default btn-product") %>
   </div>
-
-  
   <%= link_to 'Show', @product %> |
   <%= link_to 'Back', products_path %>
 <% end %>
-</div>
+

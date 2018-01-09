@@ -62,7 +62,7 @@ h1 {
 // SHOWS
 
 .show-wrapper {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
 }
 
@@ -86,4 +86,12 @@ input .form-control {
 
 .product-form .btn-product {
 	margin-left: 0;
+}
+
+// DESTROY
+
+.destroy-product {
+	position: absolute;
+	bottom: 0;
+	left: 5px;
 }
