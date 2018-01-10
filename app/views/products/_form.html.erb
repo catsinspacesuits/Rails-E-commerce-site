@@ -27,18 +27,19 @@
   </div>
 
   <div class="field">
-    <%= form.label :colour %><br>
-    <%= form.text_field :colour %>
+    <%= form.label :color %><br>
+    <%= form.text_field :color, id: :product_color, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :price %><br>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, id: :product_price, class: 'form-control' %>
   </div>
 
   <div class="actions">
       <%= submit_tag("Submit", class:"btn btn-default btn-product") %>
   </div>
+
   <%= link_to 'Show', @product %> |
   <%= link_to 'Back', products_path %>
 <% end %>
