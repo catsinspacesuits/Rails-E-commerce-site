@@ -1,0 +1,241 @@
+/* line 1, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+body {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* line 9, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 14, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product {
+  position: relative;
+  width: 275px;
+  height: 390px;
+  border: 1px solid black;
+  margin: 20px 50px 15px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 100;
+}
+
+/* line 25, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 30, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* line 34, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-name {
+  float: left;
+  width: 100%;
+  font-size: 0.3em;
+  margin: 0 10px;
+}
+
+/* line 41, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-price {
+  float: right;
+  margin: 10px;
+}
+
+/* line 46, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-image {
+  float: left;
+  width: 130px;
+  height: 170px;
+  margin: 12px;
+  border: 1px solid black;
+}
+
+/* line 54, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-description {
+  position: absolute;
+  top: 270px;
+  left: 15px;
+  margin: 12px;
+}
+/* line 2, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: "montserrat", arial;
+  font-weight: 700;
+  padding-bottom: 8em;
+  background-color: #424242;
+}
+
+/* line 19, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-size: 3.2em;
+  color: white;
+}
+
+/* line 24, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.header {
+  max-width: 500px;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.5em auto;
+}
+
+/* line 31, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.footer-text {
+  margin: 10px auto;
+  width: 200px;
+  padding-top: 0.7em;
+}
+
+/* line 37, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #d92727;
+  border-top: 1px solid black;
+  margin-top: 4em;
+}
+
+/* line 49, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.btn {
+  border: 2px solid #d92727;
+  background-color: #343434;
+  color: white;
+  font-weight: 900;
+  margin: 10px;
+}
+
+/* line 57, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.btn:hover {
+  background-color: #d92727;
+  color: white;
+  border: 2px solid #343434;
+  transition: 300ms;
+}
+
+/* line 64, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.index-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 380px;
+}
+
+/* line 72, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.book {
+  width: 200px;
+  height: auto;
+  box-shadow: 5px 5px 10px #555555;
+  margin-bottom: 25px;
+}
+
+/* line 79, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.contact-main {
+  width: 30%;
+  height: 360px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* line 86, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.contact-main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 92, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.about-main {
+  width: 70%;
+  height: auto;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+/* line 99, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.header-about {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 107, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.panel .thankyou {
+  color: black;
+  text-align: center;
+}
+
+/* line 114, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.product-form {
+  margin: 0 auto;
+  width: 25%;
+}
+
+/* line 119, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+input .form-control {
+  padding: 10px;
+  color: black;
+}
+
+/* line 124, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.product-form .btn-product {
+  margin-left: 0;
+}
+
+/* line 130, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.show-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 137, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner .item img {
+  margin: 0 auto;
+}
+
+/* line 143, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.destroy-product {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
