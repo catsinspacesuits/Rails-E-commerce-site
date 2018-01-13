@@ -145,9 +145,18 @@ input .form-control {
 	left: 5px;
 }
 
-// NOTICEs
+// NOTICES
 
-#notice {
+.notice {
+	text-align: center;
+	padding: 2em;
+	font-size: 1.7em;
+	color: #fff;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.alert {
 	text-align: center;
 	padding: 2em;
 	font-size: 1.7em;

@@ -18,8 +18,12 @@
     	<h1>Red and Black Books</h1>
     </div>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+    <p class="notice alert-danger" role="alert"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+    <p class="alert alert-danger" role="alert"><%= alert %></p>
+    <% end %>
 
     <%= yield %>
 
