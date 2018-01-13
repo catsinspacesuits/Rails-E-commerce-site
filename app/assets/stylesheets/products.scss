@@ -51,11 +51,19 @@ h1 {
 	border: 1px solid black;
 }
 
-.product-description {
+main .product-description {
 	position: absolute;
 	top: 270px;
 	left: 15px;
 	margin: 12px;
 	
+}
+
+// LANDING PAGE
+
+main .landing-page-wrapper {
+	width: 60%;
+	margin: 0 auto;
+
 }
 
