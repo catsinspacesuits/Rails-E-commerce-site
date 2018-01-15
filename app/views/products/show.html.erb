@@ -1,24 +1,31 @@
+
+
 <p id="notice"><%= notice %></p>
-<main class="show-wrapper">
-  <p>
+
+<div class="show-wrapper">
+  <h2 class="product-show-name">
     <strong>Name: </strong>
     <%= @product.name %>
-  </p>
+  </h2>
 
-  <p>
+  <div class="product-show-image-wrapper">
+    <%= image_tag(@product.image_url, class: "product-show-image image-responsive") %>
+  </div>
+
+  <h3>
+    <strong>Price: </strong>
+    <%= @product.price %>
+  </h3>
+
+  <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
+  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
+
+  <p class="product-show-description">
     <strong>Description: </strong>
     <%= @product.description %>
   </p>
 
-  <p>
-    <strong>Price: </strong>
-    <%= @product.price %>
-  </p
+  <p><%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %></p>
+</div>
 
-  <p>
-    <%= image_tag(@product.image_url) %>
-  </p>
-
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
-</main>
