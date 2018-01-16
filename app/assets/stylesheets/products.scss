@@ -71,10 +71,11 @@ main .landing-page-wrapper {
 
 .show-wrapper {
 	position: relative;
-	height: 40em;
+	height: auto;
 	padding: 2em;
 	margin: 5em auto;
-
+	border: 2px solid white;
+	box-shadow: 2px 2px 2px #eee;
 }
 
 .product-review {
@@ -83,7 +84,6 @@ main .landing-page-wrapper {
 
 .product-show-name {
 	text-align: center;
-	
 }
 
 .product-show-image {
@@ -95,6 +95,27 @@ main .landing-page-wrapper {
 .product-show-image-wrapper {
 	width: 18em;
 	height: 24em;
-	margin: 0 auto
+	margin: 0 auto;
+	padding: 1em;
+
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 600px) {
+    .product-show-image {
+        width: 9em;
+        height: 12em;
+    }
+    .product-show-image-wrapper {
+    	width: 9em;
+    	height: 12em;
+    }
+
+   .show-wrapper {
+   	padding: 1em;
+   	border: none;
+   	box-shadow: none;
+   }
 }
 
