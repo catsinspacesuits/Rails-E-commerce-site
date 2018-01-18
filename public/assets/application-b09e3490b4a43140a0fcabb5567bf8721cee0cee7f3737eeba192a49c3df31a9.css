@@ -1,0 +1,370 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 1, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+body {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* line 9, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 14, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product {
+  position: relative;
+  width: 275px;
+  height: 390px;
+  border: 1px solid black;
+  margin: 20px 50px 15px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 100;
+}
+
+/* line 25, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 30, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* line 34, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-name {
+  float: left;
+  width: 100%;
+  font-size: 0.3em;
+  margin: 0 10px;
+}
+
+/* line 41, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-price {
+  float: right;
+  margin: 10px;
+}
+
+/* line 46, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-image {
+  float: left;
+  width: 130px;
+  height: 170px;
+  margin: 12px;
+  border: 1px solid black;
+}
+
+/* line 54, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+main .product-description {
+  position: absolute;
+  top: 270px;
+  left: 15px;
+  margin: 12px;
+}
+
+/* line 64, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+main .landing-page-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* line 72, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.show-wrapper {
+  position: relative;
+  width: 50%;
+  height: auto;
+  padding: 2em;
+  margin: 5em auto;
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px #eee;
+}
+
+/* line 82, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-review {
+  padding: 1.5em 0;
+}
+
+/* line 86, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-show-name {
+  text-align: center;
+}
+
+/* line 90, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-show-image {
+  width: 18em;
+  height: 24em;
+  margin: 0 auto;
+}
+
+/* line 96, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+.product-show-image-wrapper {
+  width: 18em;
+  height: 24em;
+  margin: 3em auto;
+  padding: 1em;
+}
+
+@media (max-width: 600px) {
+  /* line 107, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+  .product-show-image {
+    width: 9em;
+    height: 12em;
+  }
+
+  /* line 111, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+  .product-show-image-wrapper {
+    width: 9em;
+    height: 12em;
+  }
+
+  /* line 116, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+  .show-wrapper {
+    width: 90%;
+    padding: 1em;
+    border: none;
+    box-shadow: none;
+  }
+
+  /* line 123, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/products.scss */
+  h2 {
+    font-size: 1.2em;
+  }
+}
+/* line 2, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 6, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: "montserrat", arial;
+  font-weight: 700;
+  padding-bottom: 8em;
+  background-color: #424242;
+}
+
+/* line 19, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-size: 3.2em;
+  color: white;
+}
+
+/* line 24, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.header {
+  max-width: 500px;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.5em auto;
+}
+
+/* line 31, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.footer-text {
+  margin: 10px auto;
+  width: 200px;
+  padding-top: 0.7em;
+}
+
+/* line 37, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+#footer {
+  position: absolute;
+  bottom: -6em;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #d92727;
+  border-top: 1px solid black;
+  margin-top: 4em;
+}
+
+/* line 48, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.btn {
+  border: 2px solid #d92727;
+  background-color: #343434;
+  color: white;
+  font-weight: 900;
+  margin: 10px;
+}
+
+/* line 56, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.btn:hover {
+  background-color: #d92727;
+  color: white;
+  border: 2px solid #343434;
+  transition: 300ms;
+}
+
+/* line 63, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.index-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 380px;
+}
+
+/* line 71, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.book {
+  width: 200px;
+  height: auto;
+  box-shadow: 5px 5px 10px #555555;
+  margin-bottom: 25px;
+}
+
+/* line 78, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.contact-main {
+  width: 30%;
+  height: 360px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+/* line 85, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.contact-main ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 91, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.about-main {
+  width: 70%;
+  height: auto;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+/* line 98, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.header-about {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0 0 0.5em 0;
+}
+
+/* line 106, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.panel .thankyou {
+  color: black;
+  text-align: center;
+}
+
+/* line 113, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.general-form {
+  margin: 0 auto;
+  width: 25%;
+}
+
+/* line 118, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+input .form-control {
+  padding: 10px;
+  color: black;
+}
+
+/* line 123, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.general-form .btn-product {
+  margin-left: 0;
+}
+
+/* line 129, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner .item img {
+  margin: 0 auto;
+}
+
+/* line 135, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.destroy-product {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+
+/* line 143, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.notice {
+  text-align: center;
+  padding: 2em;
+  font-size: 1.7em;
+  color: #fff;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* line 152, /mnt/c/Users/Me/Desktop/Rails/app/app/assets/stylesheets/simple_pages.scss */
+.alert {
+  text-align: center;
+  padding: 2em;
+  font-size: 1.7em;
+  color: #fff;
+  font-style: italic;
+  font-weight: 100;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
