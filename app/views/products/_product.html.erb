@@ -7,9 +7,12 @@
   </div>
   <p class="product-description"><%= product.description %></p>
   <p class="product-price"><%= product.price %></p>
+  <% if signed_in? && current_user.admin? %>
   <p class="destroy-product">
   	<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> |
-  	<%= link_to 'Edit', edit_product_path(product) %></p>
+  	<%= link_to 'Edit', edit_product_path(product) %>
+  </p>
+  <% end %>
 </div><!-- /col -->
 
 	
