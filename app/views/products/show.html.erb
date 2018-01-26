@@ -5,7 +5,7 @@
   </h2>
 
   <div class="product-show-image-wrapper">
-    <%= image_tag(@product.image_url, class: "product-show-image image-responsive") %>
+    <%= image_tag(@product.image_url, class: "img-zoom product-show-image image-responsive", data_zoom_image: "@product.image_url") %>
   </div>
 
   <h3>

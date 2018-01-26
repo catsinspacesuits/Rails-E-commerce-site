@@ -1,18 +1,27 @@
 $(document).on('turbolinks:load', function(){
-    $('.rating').raty({
-      starHalf: '<%= asset_path 'star-half.png' %>',
-      starOff: '<%= asset_path 'star-off.png' %>',
-      starOn: '<%= asset_path 'star-on.png' %>',
-      scoreName: 'comment[rating]'
-    });
+  $('.rating').raty({
+    starHalf: '<%= asset_path 'star-half.png' %>',
+    starOff: '<%= asset_path 'star-off.png' %>',
+    starOn: '<%= asset_path 'star-on.png' %>',
+    scoreName: 'comment[rating]'
+  });
+  $('.rated').raty({
+    starHalf: '<%= asset_path 'star-half.png' %>',
+    starOff: '<%= asset_path 'star-off.png' %>',
+    starOn: '<%= asset_path 'star-on.png' %>',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+  $(".img-zoom").elevateZoom({
+    zoomWindowWidth:200, 
+    zoomWindowHeight:200, 
+    easing:true, 
+    scrollZoom:true, 
+    zoomWindowPosition:4,
+    zoomWindowOffety:1,
+    zoomWindowOffetx:2
+  });
 
-    $('.rated').raty({
-      starHalf: '<%= asset_path 'star-half.png' %>',
-      starOff: '<%= asset_path 'star-off.png' %>',
-      starOn: '<%= asset_path 'star-on.png' %>',
-      readOnly: true,
-      score: function() {
-        return $(this).attr('data-score');
-      }
-   }); 
 });
