@@ -1,4 +1,5 @@
 <div class="show-wrapper">
+<% cache @product do %>  
   <h2 class="product-show-name">
     <strong>Name: </strong>
     <%= @product.name %>
@@ -15,7 +16,6 @@
 
   <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
   <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
-
   <p class="product-show-description">
     <strong>Description: </strong>
     <%= @product.description %>
@@ -25,7 +25,7 @@
     <%= hidden_field_tag(:product_id, @product.id) %>
     <%= render partial: "shared/stripe_checkout_button" %>
   <% end %></div>
-
+<% end %> <!-- end of caching -->
   <%= render 'new_comment' %>
   <%= render 'comments' %>
 

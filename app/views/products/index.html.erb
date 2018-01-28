@@ -6,12 +6,15 @@
   
   <div class="container-fluid">
     <div class="row">
-      <% @products.each do |product| %>
-        <% if product.image_url != nil %> 
-          <%=  render partial: 'product', locals: {product: product } %>
-        <% end %>
-      <% end %>
-      
+      <% if @products.count > 0 %>
+          <% cache(cache_key_for_products) do %>
+              <%  @products.each do |product| %>
+                  <%= render product %>
+                <% end %>
+            <% end %>
+          <% else %>
+            <br><b> No Products Found</b> <br>
+          <% end %>
     </div> <!-- end of row -->
   </div> <!-- end of container -->
   
