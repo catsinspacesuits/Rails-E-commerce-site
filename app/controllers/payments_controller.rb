@@ -1,6 +1,6 @@
 class PaymentsController < ApplicationController
+	protect_from_forgery with: :null_session
 	def create
-		skip_before_action :verify_authenticity_token
 		token = params[:stripeToken]
 		@product = Product.find(params[:product_id])
 		@user = current_user
