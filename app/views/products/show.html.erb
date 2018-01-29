@@ -1,5 +1,4 @@
 <div class="show-wrapper">
-<% cache @product do %>  
   <h2 class="product-show-name">
     <strong>Name: </strong>
     <%= @product.name %>
@@ -25,7 +24,7 @@
     <%= hidden_field_tag(:product_id, @product.id) %>
     <%= render partial: "shared/stripe_checkout_button" %>
   <% end %></div>
-<% end %> <!-- end of caching -->
+
   <%= render 'new_comment' %>
   <%= render 'comments' %>
 
