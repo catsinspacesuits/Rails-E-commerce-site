@@ -1,5 +1,6 @@
 class PaymentsController < ApplicationController
 	def create
+		protect_from_forgery with: :null_session
 		token = params[:stripeToken]
 		@product = Product.find(params[:product_id])
 		@user = current_user
