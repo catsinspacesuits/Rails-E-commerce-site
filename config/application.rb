@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 
 module App
   class Application < Rails::Application
+  	config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
