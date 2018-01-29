@@ -31,6 +31,11 @@
 
   <%= will_paginate @comments %>
   <% if signed_in? && current_user.admin? %>
+  <h6 class="viewed"> Views:
+    <span class="badge">
+      <%= @product.views %>
+    </span>
+  </h6>
   <p><%= link_to 'Edit', edit_product_path(@product) %> |
   <% end %>
   <%= link_to 'Back', products_path %></p>
