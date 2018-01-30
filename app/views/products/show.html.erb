@@ -15,17 +15,21 @@
 
   <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
   <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
+
   <p class="product-show-description">
     <strong>Description: </strong>
     <%= @product.description %>
   </p>
+
   <p>Average Rating: <div id="#average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
   <div><%= form_with(url: '/payments/create') do |form| %>
     <%= hidden_field_tag(:product_id, @product.id) %>
     <%= render partial: "shared/stripe_checkout_button" %>
   <% end %></div>
 
   <%= render 'new_comment' %>
+  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
   <%= render 'comments' %>
 
   <%= will_paginate @comments %>
