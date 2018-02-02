@@ -1,46 +1,49 @@
-<div class="show-wrapper">
-  <h2 class="product-show-name">
-    <strong>Name: </strong>
-    <%= @product.name %>
-  </h2>
+<div class ="container-fluid">
+  <div class ="row" data-product-id="<%= @product.id %>">
+    <div class="show-wrapper">
+      <h2 class="product-show-name">
+        <strong>Name: </strong>
+        <%= @product.name %>
+      </h2>
 
-  <div class="product-show-image-wrapper">
-    <%= image_tag(@product.image_url, class: "img-zoom product-show-image image-responsive", data_zoom_image: "@product.image_url") %>
-  </div>
+      <div class="product-show-image-wrapper">
+        <%= image_tag(@product.image_url, class: "img-zoom product-show-image image-responsive", data_zoom_image: "@product.image_url") %>
+      </div>
 
-  <h3>
-    <strong>Price: </strong>
-    <%= "$#{'%.2f' %(@product.price.to_i / 100)}" %>
-  </h3>
+      <h3>
+        <strong>Price: </strong>
+        <%= "$#{'%.2f' %(@product.price.to_i / 100)}" %>
+      </h3>
 
-  <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
-  <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
+      <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
+      <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
 
-  <p class="product-show-description">
-    <strong>Description: </strong>
-    <%= @product.description %>
-  </p>
+      <p class="product-show-description">
+        <strong>Description: </strong>
+        <%= @product.description %>
+      </p>
 
-  <p>Average Rating: <div id="#average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+      <p>Average Rating: <div id="#average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
-  <div><%= form_with(url: '/payments/create') do |form| %>
-    <%= hidden_field_tag(:product_id, @product.id) %>
-    <%= render partial: "shared/stripe_checkout_button" %>
-  <% end %></div>
+      <div><%= form_with(url: '/payments/create') do |form| %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %></div>
 
-  <%= render 'new_comment' %>
-  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-  <%= render 'comments' %>
+      <%= render 'new_comment' %>
+      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+      <%= render 'comments' %>
 
-  <%= will_paginate @comments %>
-  <% if signed_in? && current_user.admin? %>
-  <h6 class="viewed"> Views:
-    <span class="badge">
-      <%= @product.views %>
-    </span>
-  </h6>
-  <p><%= link_to 'Edit', edit_product_path(@product) %> |
-  <% end %>
-  <%= link_to 'Back', products_path %></p>
-</div> <!-- end of show-wrapper -->
-
+      <%= will_paginate @comments %>
+      <% if signed_in? && current_user.admin? %>
+      <h6 class="viewed"> Views:
+        <span class="badge">
+          <%= @product.views %>
+        </span>
+      </h6>
+      <p><%= link_to 'Edit', edit_product_path(@product) %> |
+      <% end %>
+      <%= link_to 'Back', products_path %></p>
+    </div> <!-- end of show-wrapper -->
+  </div> <!-- end of row -->
+</div>  <!-- end of container -->
