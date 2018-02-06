@@ -24,6 +24,7 @@ class Product < ApplicationRecord
   def views
     $redis.get("product:#{id}")
   end
+  
   def viewed!
     $redis.incr("product:#{id}")
   end
