@@ -16,14 +16,30 @@ body {
 	background-color: #424242;
 }
 
-h1 {
-	font-size: 3.2em;
-	color: white;
+// NAV BAR
+
+.navbar {
+	background-color: black;
+	border: black;
 }
 
+.navbar ul {
+	padding: 15px 0 0 40px;
+}
+
+.navbar .form-group {
+	padding-top: 10px;
+}
+
+.navbar input {
+	margin-left: 5px;
+}
+
+// HEADER
+
 .header {
-	max-width: 500px;
-	text-align: center;
+	width: 505px;
+	height: 200px;
 	padding: 0.5em;
 	margin: 0.5em auto;
 }
@@ -50,7 +66,7 @@ h1 {
 	background-color: #343434;
 	color: white;
 	font-weight: 900;
-	margin: 10px;
+	margin: 10px 0;
 }
 
 .btn:hover {
