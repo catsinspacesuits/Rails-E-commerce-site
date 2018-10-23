@@ -2,7 +2,6 @@
   <div class ="row" data-product-id="<%= @product.id %>">
     <div class="show-wrapper">
       <h2 class="product-show-name">
-        <strong>Name: </strong>
         <%= @product.name %>
       </h2>
 
@@ -10,20 +9,20 @@
         <%= image_tag(@product.image_url, class: "img-zoom product-show-image image-responsive", data_zoom_image: "@product.image_url") %>
       </div>
 
-      <h3>
-        <strong>Price: </strong>
-        <%= "$#{'%.2f' %(@product.price.to_i / 100)}" %>
-      </h3>
-
-      <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
-      <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
-
       <p class="product-show-description">
         <strong>Description: </strong>
         <%= @product.description %>
       </p>
 
       <p>Average Rating: <div id="#average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+
+      <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
+      <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
+
+      <h3>
+        <strong>Price: </strong>
+        <%= "$#{'%.2f' %(@product.price.to_i / 100)}" %>
+      </h3>
 
       <div><%= form_with(url: '/payments/create') do |form| %>
         <%= hidden_field_tag(:product_id, @product.id) %>
