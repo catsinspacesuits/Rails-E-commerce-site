@@ -15,9 +15,6 @@
        <% @products.each do |product| %>
        <div class="item<%= " active" if product == @products.first %>">
          <%= image_tag(product.image_url, class: "img-reponsive book", size: "200") %>
-         <div class="carousel-caption">
-           <%= product.name %>
-         </div>
        </div>
        <% end %>
      </div>
