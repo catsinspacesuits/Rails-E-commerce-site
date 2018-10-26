@@ -29,8 +29,8 @@
       <div class="product-review"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Highest rated review: <%= @product.highest_rating_comment %><br><br>
       <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Lowest rated review: <%= @product.lowest_rating_comment %></div>
 
-      <%= render 'new_comment' %>
-      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+      <h3>Comments</h3>
+
       <%= render 'comments' %>
 
       <%= will_paginate @comments %>

@@ -8,6 +8,7 @@
     </div>
     <p class="product-description"><%= product.description %></p>
     <p class="product-price"><%= "$#{'%.2f' %(product.price.to_i / 100)}" %></p>
+    <p>Average Rating: <div id="#average-rating" class="rated" data-score="<%= @product.average_rating %>"></div> </p>
     <% if signed_in? && current_user.admin? %>
       <p class="destroy-product">
       	<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> |
